@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Zippy</title>
+    <style>	
+
+        body {
+            margin: 0;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(27, 27, 27);
+        }
+        footer{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            padding: 1%;
+            padding-inline: 0;
+            background-color: #d06aff;
+            align-items: center;
+            justify-content: space-around;
+        }
+        header{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            padding: 1%;
+            padding-inline: 0;
+            background-color: #000000;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .inicio img {
+            transition: 0.5s;
+            width: 50%;
+        }
+        .inicio img:hover {
+            filter:none;
+            
+        }
+            .inicio {
+            margin: 0;
+            padding: 0;
+
+        }
+        .headerconteudo {
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+            margin-right: 10%;
+            gap: 50px;
+            color: #f1f1f1;
+            
+        }
+        .headerlink {
+            height: 100%;
+            text-decoration: 0;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            transition: 0.3s;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .headerlink:hover {
+            color: rgb(26, 90, 0);
+        }
+        #logo {
+            width: 200px;
+        }
+        .banner{
+            width: 1%;
+            height: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+             .card {
+            box-shadow: 0 4px 8px 0 rgba(0 ,0 ,0 ,0.603);
+            text-align: center;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: white;
+        }
+        .preço{
+            color: rgb(28, 139, 0);
+            font-size: 20px;
+        }
+        .card a{
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 82, 0);
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            font-style: italic;
+        }
+        .cartões {
+            margin-top: 30px;
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            gap: 100px;
+            margin-inline: 100px;
+        }
+        .cartões a{
+           padding-inline: 0;
+        }
+        .propaganda{
+            margin-inline: 100px;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row wrap;
+        }
+        .linha{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 1%;
+            padding-inline: 0;
+            background-color: #00742c;
+            margin: 5px;
+            margin-inline: 0;
+            align-items: center;
+        }
+        .caixa{
+            font-size: 13px;
+            font-weight: 100;
+            color: rgb(247, 242, 242);
+            align-items: center;
+            display: flex;
+            gap: 10px;
+        }
+        .vermelho{
+            color: rgb(177, 255, 153);
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        .final{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            padding: 1%;
+            padding-inline: 0;
+            background-color: #eaf371;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #myCarousel{
+            width: 45%;
+        }
+        .main{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .imagens{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            padding: 1%;
+            padding-inline: 0;
+            align-items: center;
+            justify-content: space-around;
+            
+    
+        }               
+        </style>
+</head>
+<body>
+    <header class="topNav" id="mynav">
+        <a class="inicio" href="../Airsoft/index.html">
+            <img src="../Airsoft/ZIPPY AIR SOFT.png" id="logo"> </a>
+        <div class="headerconteudo">
+            <a class="headerlink" href="../Airsoft/armas.html">Armas Airsoft</a>
+            <a class="headerlink" href="../Airsoft/camping.html">Camping e Aventura</a>
+            <a class="headerlink" href="../Airsoft/lunetas.html">Lunetas</a>
+            <a class="headerlink" href="../Airsoft/equipamentos.html">Equipamentos</a>
+            <a class="headerlink" href="../Airsoft/novidades.html">Novidades</a>
+            <a class="headerlink" href="../Airsoft/sobre.html">Sobre</a>
+        </div>
+
+
+    </header>
+    	
+    <div class="linha">
+        <div class="caixa">
+            <img src="../Airsoft/cabeçalho/caminhao-de-entrega.png" width="10%">
+            <label class="vermelho">Frete grátis</label>
+            <label>Consule o regulamento</label>
+        </div>
+        <div class="caixa">
+            <img src="../Airsoft/cabeçalho/cartao-de-credito.png"width="10%">
+            <label class="vermelho">Parcelamento</label>
+            <label>Em até 10x</label>
+        </div>
+        <div class="caixa">
+            <img src="../Airsoft/cabeçalho/moeda-de-dolar.png"width="10%">
+            <label>Boleto ou transferência</label>
+            <label class="vermelho">7% de desconto</label>
+        </div>
+        <div class="caixa">
+            <img src="../Airsoft/cabeçalho/silhueta-do-corredor-correndo-rapido.png"width="10%">
+            <label>Entrega</label>
+            <label class="vermelho">Rápida</label>
+        </div>
+    </div>
+    
+<div class="cartões">
+    <div class="card">
+        <img src="../Airsoft/equipamentos/CAPACETE COM VISEIRA EMERSON GEAR EXF BUMP HELMET EM8981B PRETO.jpg" style="width:100%">
+        <h1> CAPACETE COM VISEIRA EMERSON GEAR</h1>
+        <p class="preço"> R$359,99</p>
+        <p> GEAR EXF BUMP HELMET EM8981B PRETO </p>
+        <a> Produto disponível</a>   
+    </div>
+    <div class="card">
+        <img src="../Airsoft/equipamentos/COLETE TÁTICO SWAT COM COLDRE E SUPORTE CAMEL BACK - TREME TERRA - 300.jpg" style="width:100%">
+        <h1> Colete Tático</h1>
+        <p class="preço"> R$259,99</p>
+        <p>  SWAT COM COLDRE E SUPORTE CAMEL BACK </p>
+        <a> Produto disponível</a>   
+    </div>
+    <div class="card">
+        <img src="../Airsoft/equipamentos/JOELHEIRA E COTOVELEIRA TÁTICA SOFT VERDE - FEASSO - 159.jpg" style="width:100%">
+        <h1> JOELHEIRA E COTOVELEIRA TÁTICA</h1>
+        <p class="preço"> R$219,99</p>
+        <p> JOELHEIRA E COTOVELEIRA TÁTICA SOFT VERDE </p>
+        <a> Produto disponível</a>   
+    </div>
+    <div class="card">
+        <img src="../Airsoft/equipamentos/MÁSCARA DE AIRSOFT JAY FAST PARA CAPACETE AREIA – FEASSO - 190.jpg" style="width:100%">
+        <h1> MÁSCARA DE AIRSOFT JAY</h1>
+        <p class="preço"> R$199,99</p>
+        <p> MÁSCARA DE AIRSOFT JAY FAST </p>
+        <a> Produto disponível</a>   
+    </div>
+    <div class="card">
+        <img src="../Airsoft/equipamentos/MÁSCARA DE AIRSOFT JERSEY COMFORT MARPAT – FEASSO - 130.jpg" style="width:100%">
+        <h1> MÁSCARA DE AIRSOFT JERSEY</h1>
+        <p class="preço"> R$190,99</p>
+        <p> MÁSCARA DE AIRSOFT JERSEY COMFORT MARPAT </p>
+        <a> Produto disponível</a>   
+    </div>
+    <div class="card">
+        <img src="../Airsoft/equipamentos/MÁSCARA DE AIRSOFT NEOPRENE CAVEIRA - NAUTIKA - 35.jpg" style="width:100%">
+        <h1> MÁSCARA DE AIRSOFT NEOPRENE</h1>
+        <p class="preço"> R$39,99</p>
+        <p> MÁSCARA DE AIRSOFT NEOPRENE CAVEIRA - NAUTIKA</p>
+        <a> Produto disponível</a>   
+    </div>
+    <div class="card">
+        <img src="../Airsoft/equipamentos/MÁSCARA DE TELA PARA AIRSOFT CONTAK - NAUTIKA - 70.jpg" style="width:100%">
+        <h1> MÁSCARA DE TELA</h1>
+        <p class="preço"> R$89,99</p>
+        <p> MÁSCARA DE TELA PARA AIRSOFT CONTAK</p>
+        <a> Produto disponível</a>   
+    </div>
+    <div class="card">
+        <img src="../Airsoft/equipamentos/ÓCULOS DE PROTEÇÃO DE TIRO E AIRSOFT INSTANT LENTE INCOLOR - EVO TACTICAL - 170.jpg" style="width:100%">
+        <h1> ÓCULOS DE PROTEÇÃO</h1>
+        <p class="preço"> R$189,99</p>
+        <p> AIRSOFT INSTANT LENTE INCOLOR - EVO TACTICAL</p>
+        <a> Produto disponível</a>   
+    </div>
+</div>
+   
+   
+        
+    

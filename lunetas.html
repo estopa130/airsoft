@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Zippy</title>
+    <style>	
+
+        body {
+            margin: 0;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(27, 27, 27);
+        }
+        footer{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            padding: 1%;
+            padding-inline: 0;
+            background-color: #d06aff;
+            align-items: center;
+            justify-content: space-around;
+        }
+        header{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            padding: 1%;
+            padding-inline: 0;
+            background-color: #000000;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .inicio img {
+            transition: 0.5s;
+            width: 50%;
+        }
+        .inicio img:hover {
+            filter:none;
+            
+        }
+            .inicio {
+            margin: 0;
+            padding: 0;
+
+        }
+        .headerconteudo {
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center;
+            margin-right: 10%;
+            gap: 50px;
+            color: #f1f1f1;
+            
+        }
+        .headerlink {
+            height: 100%;
+            text-decoration: 0;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            transition: 0.3s;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .headerlink:hover {
+            color: rgb(26, 90, 0);
+        }
+        #logo {
+            width: 200px;
+        }
+        .banner{
+            width: 1%;
+            height: 1%;
+            display: flex;
+            justify-content: space-between;
+        }
+             .card {
+            box-shadow: 0 4px 8px 0 rgba(0 ,0 ,0 ,0.603);
+            text-align: center;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: white;
+        }
+        .preço{
+            color: rgb(28, 139, 0);
+            font-size: 20px;
+        }
+        .card a{
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 82, 0);
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            font-style: italic;
+        }
+        .cartões {
+            margin-top: 30px;
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            gap: 100px;
+            margin-inline: 100px;
+        }
+        .cartões a{
+           padding-inline: 0;
+        }
+        .propaganda{
+            margin-inline: 100px;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row wrap;
+        }
+        .linha{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 1%;
+            padding-inline: 0;
+            background-color: #00742c;
+            margin: 5px;
+            margin-inline: 0;
+            align-items: center;
+        }
+        .caixa{
+            font-size: 1px;
+            font-weight: 100;
+            color: rgb(247, 242, 242);
+            align-items: center;
+            display: flex;
+            gap: 10px;
+        }
+        .vermelho{
+            color: rgb(177, 255, 153);
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        .final{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            padding: 1%;
+            padding-inline: 0;
+            background-color: #eaf371;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #myCarousel{
+            width: 45%;
+        }
+        .main{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .imagens{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+            padding: 1%;
+            padding-inline: 0;
+            align-items: center;
+            justify-content: space-around;
+            
+    
+        }               
+        </style>
+</head>
+<body>
+    <header class="topNav" id="mynav">
+        <a class="inicio" href="../Airsoft/index.html">
+            <img src="../Airsoft/ZIPPY AIR SOFT.png" id="logo"> </a>
+        <div class="headerconteudo">
+            <a class="headerlink" href="../Airsoft/armas.html">Armas Airsoft</a>
+            <a class="headerlink" href="../Airsoft/camping.html">Camping e Aventura</a>
+            <a class="headerlink" href="../Airsoft/lunetas.html">Lunetas</a>
+            <a class="headerlink" href="../Airsoft/equipamentos.html">Equipamentos</a>
+            <a class="headerlink" href="../Airsoft/novidades.html">Novidades</a>
+            <a class="headerlink" href="../Airsoft/sobre.html">Sobre</a>
+        </div>
+
+
+    </header>
+    	
+    <div class="linha">
+        <div class="caixa">
+            <img src="../Airsoft/cabeçalho/caminhao-de-entrega.png" width="10%">
+            <label class="vermelho">Frete grátis</label>
+            <label>Consule o regulamento</label>
+        </div>
+        <div class="caixa">
+            <img src="../Airsoft/cabeçalho/cartao-de-credito.png"width="10%">
+            <label class="vermelho">Parcelamento</label>
+            <label>Em até 10x</label>
+        </div>
+        <div class="caixa">
+            <img src="../Airsoft/cabeçalho/moeda-de-dolar.png"width="10%">
+            <label>Boleto ou transferência</label>
+            <label class="vermelho">7% de desconto</label>
+        </div>
+        <div class="caixa">
+            <img src="../Airsoft/cabeçalho/silhueta-do-corredor-correndo-rapido.png"width="10%">
+            <label>Entrega</label>
+            <label class="vermelho">Rápida</label>
+        </div>
+    </div>
+    
+<div class="cartões">
+    <div class="card">
+        <img src="../Airsoft/lunetas/LUNETA 4X32 ROSSI GOLD CROWN COM SUPORTE DE ALTA PRESSÃO - 11MM - 800.jpg" style="width:100%">
+        <h1> LUNETA 4X32 ROSSI</h1>
+        <p class="preço"> R$859,99</p>
+        <p> LUNETA 4X32 ROSSI GOLD CROWN COM SUPORTE DE ALTA PRESSÃO </p>
+        <a> Produto disponível</a>   
+    </div>
+    <div class="card">
+        <img src="../Airsoft/lunetas/LUNETA COMPACTA 3X32 COM RETÍCULO ILUMINADO - SWISS ARMS.jpg" style="width:100%">
+        <h1> LUNETA COMPACTA 3X32</h1>
+        <p class="preço"> R$859,99</p>
+        <p> LUNETA COMPACTA 3X32 COM RETÍCULO ILUMINADO </p>
+        <a> Produto disponível</a>   
+    </div>
+    <div class="card">
+        <img src="../Airsoft/lunetas/LUNETA VECTOR CERATO 3-9X32 SFP - VECTOR OPTICS - 1079.jpg" style="width:100%">
+        <h1> LUNETA VECTOR CERATO 3-9X32</h1>
+        <p class="preço"> R$1059,99</p>
+        <p> LUNETA VECTOR CERATO 3-9X32 SFP - VECTOR OPTICS </p>
+        <a> Produto disponível</a>   
+    </div>
+    <div class="card">
+        <img src="../Airsoft/lunetas/MICRODOT VECTOR FRENZY-II 1X20X28 3MOA IPX6 - VECTOR OPTICS.jpg" style="width:100%">
+        <h1> MICRODOT VECTOR FRENZY-II</h1>
+        <p class="preço"> R$1099,99</p>
+        <p> MICRODOT VECTOR FRENZY-II 1X20X28 3MOA IPX6 </p>
+        <a> Produto disponível</a>   
+    </div>
+    <div class="card">
+        <img src="../Airsoft/lunetas/MIRA HOLOGRÁFICA COMPACTA RED DOT 4X32 COM ALÇA E MASSA TRILHO 22MM – QUICK SHOT - 790.jpg" style="width:100%">
+        <h1> MIRA HOLOGRÁFICA COMPACTA</h1>
+        <p class="preço"> R$790,99</p>
+        <p> MIRA HOLOGRÁFICA COMPACTA RED DOT 4X32 </p>
+        <a> Produto disponível</a>   
+    </div>
+    <div class="card">
+        <img src="../Airsoft/lunetas/MIRA HOLOGRÁFICA RED DOT CBC 1 X 30 - 390.jpg" style="width:100%">
+        <h1> RED DOT CBC</h1>
+        <p class="preço"> R$399,99</p>
+        <p> MIRA HOLOGRÁFICA RED DOT CBC</p>
+        <a> Produto disponível</a>   
+    </div>
+</div>
+   
+   
+        
+    
